@@ -1,0 +1,82 @@
+
+  
+<div class="row">
+    <div class="col-xs-4"></div>
+    <div class="col-xs-4">
+        <div id="display">
+            <input type="text" value="{{inputDisplay}}" class="form-control" disabled>
+            <input type="text" value="{{resultDisplay}}" class="form-control" disabled>
+        </div>
+        <br/>
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-xs-6">
+                    <button type="button" class="btn btn-default btn-ac btn-block" id="key"  (click)="onAcClicked()">AC</button>
+                </div>
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-primary btn-block" id="key" (click)="onOperatorClicked('^')" [disabled]="isError">^</button>
+                </div>
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-primary btn-block" id="key" (click)="onOperatorClicked('√')" [disabled]="isError">√</button>
+                </div>
+            </div>           
+            <div class="row no-gutters">
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-default btn-block" id="key" (click)="onKeyClicked('7')" [disabled]="isError">7</button>
+                </div>
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-default btn-block" id="key" (click)="onKeyClicked('8')" [disabled]="isError">8</button>
+                </div>
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-default btn-block" id="key" (click)="onKeyClicked('9')" [disabled]="isError">9</button>
+                </div>
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-primary btn-block" id="key" (click)="onOperatorClicked('/')" [disabled]="isError">÷</button>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-default btn-block" id="key" (click)="onKeyClicked('4')" [disabled]="isError">4</button> 
+                </div>
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-default btn-block" id="key" (click)="onKeyClicked('5')" [disabled]="isError">5</button> 
+                </div>
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-default btn-block" id="key" (click)="onKeyClicked('6')" [disabled]="isError">6</button>
+                </div>
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-primary btn-block" id="key" (click)="onOperatorClicked('*')" [disabled]="isError">x</button>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-default btn-block" id="key" (click)="onKeyClicked('1')" [disabled]="isError">1</button> 
+                </div>
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-default btn-block" id="key" (click)="onKeyClicked('2')" [disabled]="isError">2</button> 
+                </div>
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-default btn-block" id="key" (click)="onKeyClicked('3')" [disabled]="isError">3</button>
+                </div>
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-primary btn-block" id="key" (click)="onOperatorClicked('-')" [disabled]="isError">-</button>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-default btn-block" id="key" (click)="onKeyClicked('.')" [disabled]="isError">.</button> 
+                </div>
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-default btn-block" id="key" (click)="onKeyClicked('0')" [disabled]="isError">0</button> 
+                </div>
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-default btn-block" id="key" (click)="onEqualClicked()" [disabled]="isError">=</button>
+                </div>
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-primary btn-block" id="key" (click)="onOperatorClicked('+')" [disabled]="isError">+</button>
+                </div>
+            </div>
+        </div>     
+    </div>
+    <div class="col-xs-4"></div>
+</div>

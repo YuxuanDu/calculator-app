@@ -1,0 +1,18 @@
+
+.no-gutters > [class*='col-'] {
+    padding-right:2px;
+    padding-left:2px;
+}
+
+button.btn-ac {
+    background-color: red;
+    
+}
+
+button#key{
+    margin-bottom: 10px;
+    outline:none;
+}
+
+
+
